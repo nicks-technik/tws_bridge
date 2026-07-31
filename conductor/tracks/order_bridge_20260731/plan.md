@@ -2,7 +2,7 @@
 
 This plan details the steps required to implement the NinjaTrader to TWS order bridge.
 
-## Phase 1: Environment and Core Data Models
+## Phase 1: Environment and Core Data Models [checkpoint: 505eb86]
 
 - [x] Task: Project and Configuration Setup
   - [x] Initialize Python environment using `uv init` and add dependencies (`ib_insync`, `watchdog`, `pydantic`, `loguru`, `pytest`).
