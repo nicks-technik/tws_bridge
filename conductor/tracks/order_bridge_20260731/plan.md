@@ -4,16 +4,16 @@ This plan details the steps required to implement the NinjaTrader to TWS order b
 
 ## Phase 1: Environment and Core Data Models
 
-- [ ] Task: Project and Configuration Setup
-  - [ ] Initialize Python environment using `uv init` and add dependencies (`ib_insync`, `watchdog`, `pydantic`, `loguru`, `pytest`).
-  - [ ] Write unit tests for the configuration manager to verify loading settings from environment variables/config file.
-  - [ ] Implement configuration module to load and validate TWS port, watch directory path, and log file location.
-- [ ] Task: JSON Schema and Payload Validation
-  - [ ] Write unit tests for JSON parsing and schema validation covering valid, invalid, and missing fields.
-  - [ ] Implement Pydantic schema representing the NinjaTrader order payload (`Action`, `OrderType`, `LimitPrice`, `TP`, `SL`, `ATR`, `Symbol`, `Quantity`).
-  - [ ] Write validation tests for ATR-based limits (rejecting orders if TP/SL distance deviates radically from ATR).
-  - [ ] Implement ATR-based bounds validator for SL and TP inputs.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Environment and Core Data Models' (Protocol in workflow.md)
+- [x] Task: Project and Configuration Setup
+  - [x] Initialize Python environment using `uv init` and add dependencies (`ib_insync`, `watchdog`, `pydantic`, `loguru`, `pytest`).
+  - [x] Write unit tests for the configuration manager to verify loading settings from environment variables/config file.
+  - [x] Implement configuration module to load and validate TWS port, watch directory path, and log file location.
+- [x] Task: JSON Schema and Payload Validation
+  - [x] Write unit tests for JSON parsing and schema validation covering valid, invalid, and missing fields.
+  - [x] Implement Pydantic schema representing the NinjaTrader order payload (`Action`, `OrderType`, `LimitPrice`, `TP`, `SL`, `ATR`, `Symbol`, `Quantity`).
+  - [x] Write validation tests for ATR-based limits (rejecting orders if TP/SL distance deviates radically from ATR).
+  - [x] Implement ATR-based bounds validator for SL and TP inputs.
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Environment and Core Data Models' (Protocol in workflow.md)
 
 ## Phase 2: Directory Monitor and Queue System
 
