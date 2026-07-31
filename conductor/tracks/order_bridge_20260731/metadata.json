@@ -1,0 +1,8 @@
+{
+  "track_id": "order_bridge_20260731",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-07-31T19:57:10Z",
+  "updated_at": "2026-07-31T19:57:10Z",
+  "description": "Implement local JSON file monitoring and Interactive Brokers TWS order execution bridge"
+}
