@@ -17,11 +17,11 @@ This plan details the steps required to implement the NinjaTrader to TWS order b
 
 ## Phase 2: Directory Monitor and Queue System
 
-- [ ] Task: Watchdog Directory Monitor
-  - [ ] Write unit tests for file event handler simulating directory creation and modification events.
-  - [ ] Implement Watchdog-based monitor observing the queue folder and triggers parser.
-- [ ] Task: Queue Processing and File Safety
-  - [ ] Write tests verifying file-lock handling and retrying partially written files.
+- [x] Task: Watchdog Directory Monitor
+  - [x] Write unit tests for file event handler simulating directory creation and modification events.
+  - [x] Implement Watchdog-based monitor observing the queue folder and triggers parser.
+- [~] Task: Queue Processing and File Safety
+  - [~] Write tests verifying file-lock handling and retrying partially written files.
   - [ ] Implement file access safety loop with retries before parsing.
   - [ ] Write tests verifying archiving logic (successful files moved to `processed/`, failed files moved to `error/`).
   - [ ] Implement file mover utility.

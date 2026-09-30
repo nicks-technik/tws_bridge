@@ -1,0 +1,21 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Test caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environment
+.env
